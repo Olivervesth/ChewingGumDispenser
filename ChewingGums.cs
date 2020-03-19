@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChewingGumDispenser
 {
+    //Husk klasser skal navngives i ental
     class ChewingGums
     {
        
