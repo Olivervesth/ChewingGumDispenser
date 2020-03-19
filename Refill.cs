@@ -66,18 +66,23 @@ namespace ChewingGumDispenser
         }
 
         //Gives the user a gum and describe the taste and the color
+        //Stakkels barn, han eller hun får jo aldrig sit tyggegummi ..... metoden er void
+        //Den burde jo returerne et Gum
         public void giveGum()
         {
             //Picking random index in the array so you get a random gum
             Random rand = new Random();
             int index = rand.Next(0, 55);
-
+            
+            //Ingen Console i dit logik lag
             Console.Clear();
             if(GumDispendser[index] == null)
             {
                 giveGum();
             }
+           //Ingen Console i dit logik lag
             Console.WriteLine($"Gum taste:{GumDispendser[index].taste}\nGum color:{GumDispendser[index].color}\nEnjoy your gum");
+           //Ingen Console i dit logik lag
             Console.ReadKey();
             GumDispendser[index] = null;
 
